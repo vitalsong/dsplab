@@ -10,7 +10,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 CPMAddPackage(NAME dsplib
-    GIT_REPOSITORY "git@github.com:vitalsong/dsplib.git"
+    GIT_REPOSITORY "https://github.com/vitalsong/dsplib.git"
     VERSION 0.41.0
     EXCLUDE_FROM_ALL ON
 )
