@@ -128,9 +128,9 @@ void MainWindow::_configurateScene()
 //-------------------------------------------------------------------------------------------------
 void MainWindow::_configuratePluginLoader()
 {
-    //фабрика
     m_loader = new PluginLoader();
-    m_loader->setPluginDir(QDir("plugins/"));
+    const auto pluginDir = QApplication::applicationDirPath() + "/plugins";
+    m_loader->setPluginDir(pluginDir);
     m_loader->refresh();
 
     //виджет со списком плагинов
